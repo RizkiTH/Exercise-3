@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Planet - Perang Bintang</title>
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="./assets/vendor/bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<!-- /styles -->
+</head>
+<body>
+	<div class="container text-center align-content-center">
+		<div class="row align-items-center">
+			<div class="bg-dark mt-2 mb-2 col-12 p-2 super-container">
+				<div class="logo-container">
+					<<img src="./assets/img/starwars.png" width="200px" height="100px" alt="">
+				</div>
+				<div class="search-container">
+					<input class="search" type="text" id="search" onkeyup="search()" placeholder="Cari nama planet di film Star Wars" title="Ketikkan nama planet" />
+				</div>
+
+				<hr class="bg-transparent pembatas" />
+
+				<div class="tabel-container">
+					<table id="myTable">
+						<thead>
+							<tr>
+								<th onclick="urutkanTabel(0)">Nama Planet</th>
+								<th onclick="urutkanTabel(1)">Diameter</th>
+								<th onclick="urutkanTabel(2)">Gravitasi</th>
+								<th onclick="urutkanTabel(3)">Permukaan Tanah</th>
+								<th onclick="urutkanTabel(4)">Permukaan Air</th>
+								<th onclick="urutkanTabel(5)">Populasi</th>
+							</tr>
+						</thead>
+						<tbody id="tbody">
+							
+						</tbody>
+					</table>
+
+					<!-- <table>
+						<tbody id="tbody"></tbody>
+					</table> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<!-- javascripts -->
+	<!-- <script type="text/javascript" src="./assets/vendor/jquery/jquery-3.4.1.min.js"></script> -->
+	<!-- <script type="text/javascript" src="./assets/vendor/bootstrap/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script> -->
+	<script type="text/javascript" src="./assets/js/js.js"></script>
+	<!-- /javascripts -->
+</body>
+</html>
